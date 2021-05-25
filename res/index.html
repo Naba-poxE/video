@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naba-Expo | Media</title>
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link id="usertheme" href="css/des.css" rel="stylesheet">
+  <link id="customcss" href="css/custom.css" rel="stylesheet">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://cdn.jsdelivr.net/npm/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body style="grid-template-columns: 1fr 4px 300px;">
+  <!-- Video -->
+  <main id="video">
+    <!-- Player -->
+    <section id="player" >
+      <div id="ytapiplayer" class="embed-responsive embed-responsive-16by9"></div>
+      <!-- Video info -->
+      <div class="info">
+        <header id="header">
+          <h2 id="currenttitle">${nothingPlaying}</h2>
+        </header>
+        <!-- Video controls -->
+        <span class="controls">
+          <button id="togglesynch" title="${toggleVideoSync}"><ion-icon id="pause-indicator" name="play"></ion-icon></button>
+          <button id="mediarefresh" title="${refreshPlayer}"><ion-icon name="refresh"></ion-icon></button>
+          <button id="fullscreenbtn" title="${fullscreenPlayer}"><ion-icon name="expand"></ion-icon></button>
+          <button id="voteskip" title="${voteForSkip}"><ion-icon name="play-skip-forward"></ion-icon></button>
+        </span>
+      </div>
+    </section>
+    <!-- Playlist -->
+    <section id="playlist">
+      <!-- Playlist info -->
+      <div class="info">
+        <header>
+          <h3>${playlist}</h3>
+          <button id="lockplaylist" title="${playlistOpen}"><ion-icon name="lock-open"></ion-icon></button>
+          <button id="getplaylist" title="${retrievePlaylistLinks}"><ion-icon name="link"></ion-icon></button>
+        </header>
+        <!-- Playlist controls -->
+        <span class="controls">
+          <button class="collapsed" id="showmediaurl" title="${addVideoFromUrl}" data-toggle="collapse" data-target="#addfromurl" aria-expanded="false"><ion-icon name="add"></ion-icon></button>
+          <button class="collapsed" id="showcustomembed" title="${embedCustomFrame}" data-toggle="collapse" data-target="#customembed" aria-expanded="false"><ion-icon name="code"></ion-icon></button>
+          <button id="shuffleplaylist" title="${shufflePlaylist}"><ion-icon name="shuffle"></ion-icon></button>
+          <button id="clearplaylist" title="${clearPlaylist}"><ion-icon name="close"></ion-icon></button>
+        </span>
+      </div>
+      <!-- Playlist metadata -->
+      <div class="metadata">
+        <span><ion-icon name="logo-youtube"></ion-icon><span id="plcount">0 ${videos}</span></span>
+        <span><ion-icon name="time"></ion-icon><span id="pllength">00:00</span></span>
+      </div>
+      <!-- Add video -->
+      <div class="collapse" id="addfromurl" aria-expanded="false">
+        <div class="display-flex">
+          <button id="insert_template" title="${addTemplateUrl}">
+            <div>&gt;</div>
+          </button>
+          <input id="mediaurl" type="text" placeholder="${addVideoFromUrl}">
+        </div>
+        <div id="mediatitleblock" class="display-flex" style="display: none;">
+          <input id="mediatitle" type="text" placeholder="${optionalTitle}">
+        </div>
+        <div id="subsurlblock" class="display-flex" style="display: none;">
+          <input id="subsurl" type="text" placeholder="${subtitlesUrlOptional}">
+        </div>
+        <div>
+          <button id="queue_next">${queueNext}</button>
+          <button id="queue_end">${queueLast}</button>
+          <label>
+            <input class="add-temp" type="checkbox" checked="checked">${addAsTemporary}
+          </label>
+        </div>
+      </div>
+      <div class="collapse" id="customembed" aria-expanded="false">
+        <input id="customembed-title" type="text" placeholder="${optionalTitle}">
+        <textarea id="customembed-content" rows="5" placeholder="${pasteEmbedCodeAndClick} '${queueNext}' ${or} '${queueLast}'. &#10;${acceptableEmbedCodesAre} &lt;iframe&gt; ${or} &lt;object&gt;. &#10;${customEmbedsCannotBeSynchronized}."></textarea>
+        <div>
+          <button id="ce_queue_next">${queueNext}</button>
+          <button id="ce_queue_end">${queueLast}</button>
+          <label>
+            <input class="add-temp" type="checkbox" checked="checked">${addAsTemporary}
+          </label>
+        </div>
+      </div>
+      <!-- Queue -->
+      <div id="queuefail">
+      </div>
+      <div>
+        <ul class="ui-sortable queue_sortable" id="queue"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Gutter -->
+  <div class="gutter"></div>
+
+  <!-- Chat -->
+  <aside id="chat">
+    <!-- Chat controls -->
+    <div class="controls">
+      <button id="userlisttoggle" title="${toggleUserList}">
+        <ion-icon name="chevron-down"></ion-icon>
+        <span id="usercount">${connection}...</span>
+      </button>
+      <span>
+        <button id="leader_btn" title="${leaderDesc}">${leader}</button>
+        <!-- Settings button -->
+        <button id="showoptions" class="collapsed" data-toggle="collapse" data-target="#optionsPanel" aria-expanded="false"><ion-icon name="settings-sharp"></ion-icon></button>
+      </span>
+    </div>
+    <!-- User list -->
+    <div id="userlist"></div>
+    <!-- Settings list -->
+    <ul id="optionsPanel" class="collapse" aria-expanded="false">
+      <div>
+        <h4>${account}</h4>
+        <li><button id="exitBtn">${login}</button></li>
+      </div>
+      <div>
+        <h4>${general}</h4>
+        <li><button id="hotkeysBtn"><span>${hotkeys}</span></button></li>
+        <li><button id="swapLayoutBtn" title="${swapLayout}"><span>${swapLayout}</span></button></li>
+      </div>
+      <div>
+        <h4>${video}</h4>
+        <li><button id="synchThresholdBtn"><span>${synchThreshold}</span></button></li>
+        <li><button id="removeVideoBtn"><span>${removeVideo}</span></button></li>
+      </div>
+      <div id="adminMenu" style="display: none;">
+        <h4>${chat}</h4>
+        <li><button id="clearchatbtn"><span>${clearChat}</span></button></li>
+      </div>
+    </ul>
+    <!-- Messages -->
+    <div id="messagebuffer"></div>
+    <!-- Message input -->
+    <div id="chatbox">
+      <input id="chatline" type="text" placeholder="${chatlinePlaceholder}">
+      <button id="smilesbtn" title="${emotes}"><ion-icon name="happy"></ion-icon></button>
+    </div>
+    <div id="smileswrap"></div>
+    <!-- Guest login -->
+    <div id="guestlogin" style="display: none;">
+      <label>${enterAsGuest}</label>
+      <input id="guestname" type="text" placeholder="${yourName}">
+    </div>
+    <div id="guestpassword" style="display: none;">
+      <label>${enterUserPassword}</label>
+      <span>
+        <input id="guestpass" type="text" placeholder="${yourPassword}">
+        <button id="guestpass_icon"><ion-icon name="eye"></ion-icon></button>
+      </span>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/split-grid@1.0.9/dist/split-grid.js"></script>
+  <script src="client.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

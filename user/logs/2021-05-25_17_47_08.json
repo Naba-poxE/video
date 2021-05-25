@@ -1,0 +1,91 @@
+[
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 4,
+		"event": {
+			"type": "Connected"
+		},
+		"time": 1621940401054
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 4,
+		"event": {
+			"type": "Disconnected"
+		},
+		"time": 1621940468477
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 4,
+		"event": {
+			"type": "Connected"
+		},
+		"time": 1621940468574
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 4,
+		"event": {
+			"type": "ClearChat"
+		},
+		"time": 1621940481719
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 4,
+		"event": {
+			"setLeader": {
+				"clientName": "Guest 1"
+			},
+			"type": "SetLeader"
+		},
+		"time": 1621940483220
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 6,
+		"event": {
+			"setTime": {
+				"time": 0
+			},
+			"type": "SetTime"
+		},
+		"time": 1621940483222
+	},
+	{
+		"clientName": "Guest 1",
+		"clientGroup": 6,
+		"event": {
+			"setLeader": {
+				"clientName": ""
+			},
+			"type": "SetLeader"
+		},
+		"time": 1621940484136
+	},
+	{
+		"clientName": "Guest 2",
+		"clientGroup": 4,
+		"event": {
+			"type": "Connected"
+		},
+		"time": 1621944088634
+	},
+	{
+		"clientName": "Guest 2",
+		"clientGroup": 4,
+		"event": {
+			"type": "Disconnected"
+		},
+		"time": 1621944123332
+	},
+	{
+		"clientName": "Guest 2",
+		"clientGroup": 4,
+		"event": {
+			"type": "Connected"
+		},
+		"time": 1621944123448
+	}
+]
