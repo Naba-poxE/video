@@ -2,7 +2,7 @@
 	"port": 4200,
 	"channelName": "Naba-Expo",
 	"maxLoginLength": 20,
-	"maxMessageLength": 500,
+	"maxMessageLength": 5000,
 	"serverChatHistory": 50,
 	"totalVideoLimit": 0,
 	"userVideoLimit": 0,
