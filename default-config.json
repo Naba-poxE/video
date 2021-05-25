@@ -14,7 +14,7 @@
 	"permissions": {
 		"guest": ["writeChat", "addVideo", "removeVideo", "changeOrder", "requestLeader", "rewind"],
 		"user": ["guest"],
-		"leader": ["user"],
+		"leader": ["user", "clearChat"],
 		"admin": ["user", "clearChat", "setLeader", "lockPlaylist"]
 	},
 	"emotes": [
