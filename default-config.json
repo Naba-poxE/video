@@ -18,6 +18,8 @@
 		"admin": ["user", "clearChat", "setLeader", "lockPlaylist"]
 	},
 	"emotes": [
+		
+		{"name": ":cutech:", "image": "https://raw.githubusercontent.com/Naba-poxE/video/main/stk/cute.png"},
 		{"name": ":adorable:", "image": "https://i.imgur.com/5GxNwDY.png"},
 		{"name": ":angry:", "image": "https://i.imgur.com/Mx9lhMZ.png"},
 		{"name": ":artist:", "image": "https://i.imgur.com/8wQxnse.png"},
