@@ -1,6 +1,6 @@
 {
 	"port": 4200,
-	"channelName": "SyncTube",
+	"channelName": "Naba-Expo",
 	"maxLoginLength": 20,
 	"maxMessageLength": 500,
 	"serverChatHistory": 50,
