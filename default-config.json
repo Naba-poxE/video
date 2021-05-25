@@ -3,7 +3,7 @@
 	"channelName": "Naba-Expo",
 	"maxLoginLength": 20,
 	"maxMessageLength": 5000,
-	"serverChatHistory": 50,
+	"serverChatHistory": 500,
 	"totalVideoLimit": 0,
 	"userVideoLimit": 0,
 	"requestLeaderOnPause": false,
