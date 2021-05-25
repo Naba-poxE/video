@@ -1,8 +1,8 @@
-## SyncTube
+## Naba Expo Media
 Synchronized video viewing with chat and other features.
 Lightweight modern implementation and very easy way to run locally.
 
-Default channel example: http://synctube-example.herokuapp.com/
+Default channel example: https://vidstreamgit.herokuapp.com/
 
 ### New features
 - Reworked layout and theme
@@ -59,7 +59,3 @@ It's just works, but you can also check [user/ folder](/user/README.md) for serv
 - If you skipped `Setup` section before: `npm ci`
 - Open project in VSCode and press `F5` for client+server build and run
 
-### About
-- Layout and design by [Austin Riddell](https://github.com/aus-tin)
-- [Original idea](https://github.com/calzoneman/sync) by Calvin Montgomery
-- Default emotes by [emlan](https://www.deviantart.com/emlan)
