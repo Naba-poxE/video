@@ -28,8 +28,8 @@ Default channel example: https://vidstreamgit.herokuapp.com/
 
 ### Setup (Docker)
 - As alternative, you can install Docker and run:
-- `docker build -t synctube .`
-- `docker run --rm -it -p 4200:4200 -v ${PWD}/user:/usr/src/app/user synctube`
+- `docker build -t nabaexpovidstream .`
+- `docker run --rm -it -p 4200:4200 -v ${PWD}/user:/usr/src/app/user nabaexpovidstream`
 - (Docker container hides real local/global ips, so you need to checkout it manually)
 
 ### Configuration
