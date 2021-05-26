@@ -7,14 +7,13 @@ Default channel example: https://vidstreamgit.herokuapp.com/
 ### New features
 - Reworked layout and theme
 - Multi-Language support
-- Hotkeys (`Alt-P` for global play/pause, [etc](https://github.com/RblSb/SyncTube/blob/80ec4ba1747d22ec136a95d6b35ba6289e15e8ad/src/client/Buttons.hx#L254-L258))
+- Hotkeys (`Alt-P` for global play/pause, etc)
 - Mobile view with page fullscreen
 - Way to play local videos for network users (without NAT loopback feature)
 - Playback rate synchronization (with leader)
 - `/30`, `/-21`, etc to rewind video playback in seconds
 - Links mask: `foo.com/bar${1-4}.mp4` to add multiple items
 - Override every front-end file you want (`user/res` folder)
-- [Native mobile client](https://github.com/RblSb/SyncTubeApp)
 
 ### Supported players
 - Youtube (videos, streams and playlists)
@@ -35,10 +34,6 @@ Default channel example: https://vidstreamgit.herokuapp.com/
 
 ### Configuration
 It's just works, but you can also check [user/ folder](/user/README.md) for server settings and additional customization.
-
-### Plugins
-- [octosubs](https://github.com/RblSb/SyncTube-octosubs) - `ASS`/`SSA` subtitles support
-- [qswitcher](https://github.com/aNNiMON/SyncTube-QSwitcher) - raw video quality switcher
 
 ### How to use
 - Login with any nickname
