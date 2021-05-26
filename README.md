@@ -2,8 +2,9 @@
 Synchronized video viewing with chat and other features.
 Lightweight modern implementation and very easy way to run locally.
 
-Default channel example: https://vidstreamgit.herokuapp.com/
-                         https://syncvideo.herokuapp.com/
+### Default channel example: 
+Site: https://vidstreamgit.herokuapp.com/
+Site: https://syncvideo.herokuapp.com/
 
 ### New features
 - Reworked layout and theme
