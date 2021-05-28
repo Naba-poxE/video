@@ -1,4 +1,8 @@
-{
+{	
+	"siteTitle":" Naba-Expo Sync Video",
+	"siteDescription": "Synchronized video viewing with chat and other features (one-channel web service) | Naba-Expo Media",
+	"siteUrl": "https://syncvideo.herokuapp.com/",
+	"siteImage":"https://raw.githubusercontent.com/Naba-poxE/video/main/stk/cute.png",
 	"connection": "Connection",
 	"msgConnected": "Connected",
 	"msgDisconnected": "Disconnected",
