@@ -12,10 +12,10 @@
 	"youtubeApiKey": "AIzaSyDTk1OPRI9cDkAK_BKsBcv10DQCHse-QaA",
 	"youtubePlaylistLimit": 50,
 	"permissions": {
-		"guest": ["writeChat", "addVideo", "removeVideo", "changeOrder", "requestLeader", "rewind"],
+		"guest": ["writeChat", "addVideo",  "changeOrder", "requestLeader", "rewind"],
 		"user": ["guest"],
 		"leader": ["user"],
-		"admin": ["user", "clearChat", "setLeader", "lockPlaylist"]
+		"admin": ["user", "clearChat", "setLeader", "removeVideo", "lockPlaylist"]
 	},
 	"emotes": [
 		
