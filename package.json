@@ -1,5 +1,5 @@
 {
-  "name": "synctube",
+  "name": "nabaexpo",
   "version": "1.0.0",
   "description": "Synchronized video viewing with chat and other features",
   "main": "build/server.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RblSb/SyncTube.git"
+    "url": "git+https://github.com/Naba-poxE/video.git"
   },
-  "author": "RblSb",
+  "author": "Naba-Expo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RblSb/SyncTube/issues"
+    "url": "https://github.com/Naba-poxE/video/issues"
   },
-  "homepage": "https://github.com/RblSb/SyncTube#readme",
+  "homepage": "https://github.com/Naba-poxE/video/issues#readme",
   "dependencies": {
     "ws": "^7.4.2"
   }
