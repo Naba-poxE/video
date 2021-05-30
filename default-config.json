@@ -8,7 +8,7 @@
 	"userVideoLimit": 0,
 	"requestLeaderOnPause": true,
 	"localAdmins": false,
-	"templateUrl": "https://youtube.com/playlist?list=PL9FiZUDVMu9tc_85frYognMOVFC_-VkSX",
+	"templateUrl": "https://www.youtube.com/watch?v=H6WZIfJ9G_I",
 	"youtubeApiKey": "AIzaSyDTk1OPRI9cDkAK_BKsBcv10DQCHse-QaA",
 	"youtubePlaylistLimit": 50,
 	"permissions": {
