@@ -236,16 +236,12 @@ class Main {
 	}
 
 	function initIntergationHandlers():Void {
-		// Prevent heroku idle when clients online (needs APP_URL env var)
-		if (process.env["_"] != null && process.env["_"].contains("heroku")
-			&& process.env["APP_URL"] != null) {
-			var url = process.env["APP_URL"];
-			if (!url.startsWith("http")) url = 'http://$url';
-			new Timer(10 * 60 * 1000).run = function() {
-				if (clients.length == 0) return;
-				trace('Ping $url');
-				Http.get(url, r -> {});
-			}
+		var url = "https://syncvideos.herokuapp.com";
+		if (!url.startsWith("http")) url = 'http://$url';
+		new Timer(10 * 60 * 1000).run = function() {
+			if (clients.length == 0) return;
+			trace('Ping $url');
+			Http.get(url, r -> {});
 		}
 	}
 
