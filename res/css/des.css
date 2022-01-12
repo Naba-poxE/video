@@ -522,7 +522,7 @@ footer#footer {
   background-color: var(--background-chat);
   overflow-y: scroll;
   position: absolute;
-  top: 4rem;
+  top: 7rem;
   left: 1rem;
   bottom: 1rem;
   right: 1rem;
