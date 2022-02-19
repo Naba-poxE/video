@@ -1,6 +1,6 @@
 {
 	"port": 4200,
-	"channelName": "Rik-Expo",
+	"channelName": "Naba-Expo",
 	"maxLoginLength": 20,
 	"maxMessageLength": 5000,
 	"serverChatHistory": 500,
